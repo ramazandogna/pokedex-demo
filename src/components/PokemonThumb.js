@@ -5,7 +5,7 @@ const PokemonThumb = ({ id, image, name, type, _callback }) => {
    return (
       <div className={style}>
          <div className="number">
-            <small>#0{id}</small>
+            <small>0{id}</small>
          </div>
          <img src={image} alt={name} />
          <div className="detail-wrapper">

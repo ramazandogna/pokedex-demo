@@ -25,6 +25,8 @@ const App = () => {
          });
       }
       createPokemonObject(data.results);
+
+      console.log(data.results);
    };
 
    useEffect(() => {
@@ -33,7 +35,7 @@ const App = () => {
 
    return (
       <div className="app-contaner">
-         <h1>Pokemon Evolution</h1>
+         <h1>PokeCards</h1>
          <div className="pokemon-container">
             <div className="all-container">
                {allPokemons.map((pokemonStats, index) => (
